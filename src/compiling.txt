@@ -1,1 +1,2 @@
-gcc -Wall hello.c -o hello -L/usr/local/lib -lzmq
+Linux: gcc -Wall hello.c -o hello -L/usr/local/lib -lzmq
+Mac:   gcc hello_client.c -L/usr/local/Cellar/zeromq/4.1.2/lib/ -lzmq -o hello_client
