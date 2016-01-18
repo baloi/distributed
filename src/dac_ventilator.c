@@ -27,6 +27,17 @@ int main(void)
 
     int task_nbr;
     int total_msec = 0; // Total expected cost in msecs
+    for(task_nbr = 0; task_nbr < 100; task_nbr++)
+    {
+        int workload;
+        // random workload
+        workload = randof(100) + 1;
+        total_msec += workload;
+        char string[10];
+        sprintf(string, "%d", workload);
+        s_send(sender, string);
+    }
+    printf("Total expected cost: %d msec\n", total_msec);
 
     zmq_close(sink);
     zmq_close(sender);
