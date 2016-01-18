@@ -1,0 +1,6 @@
+> Run zeromq on openbsd?
+
+> divide and conquer sample
+    dac_ventilator.c
+    dac_worker.c
+    dac_sink.c
